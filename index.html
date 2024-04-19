@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
+
 <body>
     <input type="checkbox" id="menu-collapse" hidden>
     <nav class="sidebar">
@@ -66,7 +68,49 @@
         <label for="menu-collapse"><i class="fa-solid fa-caret-left"></i></label>
     </nav>
     <main>
-        
+        <div class="top-nav">
+            <h3><i class="fa-solid fa-tachometer"></i><span>Dashboard</span></h3>
+            <ul class="actions">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bell fa-shake"></i></a></li>
+                <li class="add-btn"><a href="#"><i class="fa-solid fa-plus"></i><span>New Product</span></a></li>
+                <li class="user-btn"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <section id="summary">
+                <div class="container">
+                    <a href="#" class="item">
+                        <div class="icon">
+                            <i class="fa-solid fa-shopping-bag"></i>
+                        </div>
+                        <div class="content">
+                            <h3>1000</h3>
+                            <p>Published Products</p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="content">
+                            <h3>1000</h3>
+                            <p>Registered Users</p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="icon">
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                        <div class="content">
+                            <h3>1000</h3>
+                            <p>Product Feedback</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
+
 </html>
