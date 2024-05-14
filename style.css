@@ -190,6 +190,10 @@ main #content {
     height: 100%;
 }
 
+section:not(section:nth-child(1)){
+    margin-top: 20px;
+}
+
 main #content section#summary .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -219,4 +223,26 @@ main #content section#summary .container .item .icon {
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+}
+
+
+section#pending-sales .container table {
+    width: 100%;
+    text-align: left;
+    /* border: 1px solid; */
+}
+
+section#pending-sales .container table th {
+    background: #0d80e9;
+    color: white;
+    padding-inline-start: 10px;
+    font-weight: 400;
+}
+
+section#pending-sales .container table tr > * {
+    padding-inline-start: 10px;
+}
+
+section#pending-sales .container table tr:nth-child(even) {
+    background: #70707030;
 }
